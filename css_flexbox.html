@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <style>
+        * {
+            font-size: larger;
+            font-style: italic;
+
+        }
+
+        .flexbox-container {
+            display: flex;
+            background-color: lightseagreen;
+            text-align: center;
+            justify-content: left;
+            align-items: center;
+            flex-wrap: nowrap;
+            flex-direction: row;
+
+        }
+
+        .flexbox-item {
+            width: 300px;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .flexbox-item1 {
+            background-color: lightgreen;
+            min-height: 75px;
+            line-height: 75px;
+            align-self: flex-end;
+            order: 3;
+
+        }
+
+        .flexbox-item2 {
+            background-color: lightyellow;
+            min-height: 200px;
+            line-height: 200px;
+            flex-shrink: 0;
+            align-self: baseline;
+            order: 1;
+        }
+
+        .flexbox-item3 {
+            background-color: lightsalmon;
+            min-height: 130px;
+            line-height: 130px;
+            flex-grow: 1;
+            align-self: flex-start;
+            order: 2;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flexbox-container">
+        <div class=" flexbox-item flexbox-item1">1</div>
+        <div class="flexbox-item flexbox-item2">2</div>
+        <div class="flexbox-item flexbox-item3">3</div>
+
+    </div>
+</body>
+
+</html>
